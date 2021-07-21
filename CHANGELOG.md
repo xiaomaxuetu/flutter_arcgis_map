@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* 支持ArcgisImagetiledLayer和ArcgistiledLayer的加载
