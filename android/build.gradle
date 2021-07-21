@@ -1,0 +1,44 @@
+group 'com.panda.flutter_arcgis_map'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://raw.githubusercontent.com/Pgyer/analytics/master" }
+
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+
+    }
+}
+
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://esri.jfrog.io/artifactory/arcgis'
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 23
+
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+}
+dependencies {
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.11.2'
+}
