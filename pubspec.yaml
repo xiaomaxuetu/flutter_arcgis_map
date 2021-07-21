@@ -1,6 +1,6 @@
 name: flutter_arcgis_map
 description: arcgis的原生地图接入.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/xiaomaxuetu/flutter_arcgis_map
 
 environment:
